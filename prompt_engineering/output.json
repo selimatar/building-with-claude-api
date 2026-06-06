@@ -1,0 +1,54 @@
+[
+  {
+    "output": "```json\n[\"artificial intelligence\", \"machine learning algorithms\", \"deep learning\", \"computer vision\", \"convolutional neural networks\", \"image classification\", \"natural language processing\", \"transformer architectures\", \"neural networks\", \"machine translation\", \"sentiment analysis\", \"reinforcement learning\", \"game-playing ai\", \"robotic control systems\", \"supervised learning\", \"unsupervised learning\", \"semi-supervised learning\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in artificial intelligence have revolutionized multiple domains through sophisticated applications of machine learning algorithms. Deep learning, a subset of machine learning, has demonstrated exceptional performance in computer vision tasks, enabling convolutional neural networks to achieve human-level accuracy in image classification. Natural language processing, another machine learning application, leverages transformer architectures and neural networks to improve machine translation and sentiment analysis. Furthermore, reinforcement learning\u2014a distinct machine learning paradigm\u2014has enabled breakthrough achievements in game-playing AI and robotic control systems. These interconnected approaches within artificial intelligence continue to drive innovation across supervised learning, unsupervised learning, and semi-supervised learning methodologies."
+      },
+      "solution_criteria": [
+        "Extracts topics at appropriate granularity without over-consolidating (e.g., includes both 'artificial intelligence' and 'machine learning' as distinct topics rather than merging them)",
+        "Captures all major topics mentioned including AI, machine learning variants, and application domains (computer vision, natural language processing, reinforcement learning)",
+        "Avoids redundant duplication while recognizing that hierarchical relationships exist between topics"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a passage containing overlapping or hierarchical topics (e.g., 'machine learning' as a subtopic of 'artificial intelligence') to evaluate whether the prompt maintains appropriate topic granularity or consolidation"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it provides a JSON array of strings containing topics from the article with no extra commentary. Regarding secondary criteria, it successfully extracts topics at appropriate granularity without over-consolidating (maintains distinct entries for AI, machine learning, and specific variants), captures all major topics and application domains mentioned, and avoids redundant duplication while preserving hierarchical relationships. The only minor issue is the inconsistent capitalization in 'game-playing ai', which is a stylistic flaw rather than a substantive one. The extraction is comprehensive and well-structured."
+  },
+  {
+    "output": "```json\n[\n  \"social isolation\",\n  \"anterior insula\",\n  \"dorsal anterior cingulate cortex\",\n  \"physical pain perception\",\n  \"anxiety\",\n  \"depression\",\n  \"urbanization\",\n  \"digital communication\",\n  \"face-to-face interaction\",\n  \"community structures\",\n  \"social cohesion\",\n  \"cognitive function\",\n  \"immune response\",\n  \"mortality rates\",\n  \"neuroscience\",\n  \"clinical psychology\",\n  \"public health epidemiology\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent neuroscientific research demonstrates that social isolation activates the anterior insula and dorsal anterior cingulate cortex, brain regions associated with physical pain perception. This neurobiological response has profound psychological consequences, including increased anxiety and depression symptoms that persist even after social reintegration. Sociologically, this phenomenon reflects broader patterns of urbanization and digital communication replacing face-to-face interaction, fundamentally altering community structures and social cohesion. Furthermore, longitudinal studies indicate that chronic social disconnection correlates with reduced cognitive function, weakened immune response, and increased mortality rates comparable to smoking and obesity\u2014findings that challenge traditional disciplinary boundaries between neuroscience, clinical psychology, and public health epidemiology."
+      },
+      "solution_criteria": [
+        "Extracts topics from at least three distinct academic disciplines (neuroscience, psychology, sociology)",
+        "Identifies both specific mechanisms/findings and broader conceptual themes",
+        "Returns results as a JSON array of strings",
+        "Separates overlapping topics that span multiple fields into distinct entries"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a multi-disciplinary passage containing mixed topics (e.g., neuroscience, psychology, and sociology) to verify the prompt can identify and separate distinct subject areas across different fields"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it returns a valid JSON array of strings containing topics from the passage with no extra commentary. It meets all secondary criteria by extracting topics from neuroscience, psychology, and sociology; identifying both specific mechanisms and broader themes; and separating overlapping topics into distinct entries. The extraction is thorough and well-organized, though a few conceptual topics from the passage could have been included for even greater completeness. The solution demonstrates strong understanding of the task requirements."
+  },
+  {
+    "output": "```json\n[\n  \"quantum decoherence\",\n  \"mesoscopic systems\",\n  \"macroscopic superposition\",\n  \"environmental entanglement\",\n  \"green's function formalism\",\n  \"stochastic master equation\",\n  \"phonon-mediated interactions\",\n  \"electromagnetic coupling\",\n  \"phase coherence\",\n  \"open quantum systems\",\n  \"topological protection\",\n  \"quantum information\",\n  \"thermalization\",\n  \"spontaneous symmetry breaking\",\n  \"condensed matter\",\n  \"phase transitions\",\n  \"quantum to classical\",\n  \"weak measurement\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The phenomenological investigation of quantum decoherence mechanisms in mesoscopic systems reveals intricate pathways through which macroscopic superposition states collapse via environmental entanglement. Utilizing non-equilibrium Green's function formalism coupled with stochastic master equation approaches, we elucidate how phonon-mediated interactions and electromagnetic coupling induce irreversible phase coherence degradation. The interplay between dissipative processes and unitary evolution necessitates careful treatment of open quantum systems, particularly when examining the role of topological protection in preserving quantum information during thermalization. Our analysis demonstrates that spontaneous symmetry breaking mechanisms, traditionally associated with condensed matter phase transitions, fundamentally govern the transition from quantum to classical regimes through continuous monitoring and weak measurement frameworks."
+      },
+      "solution_criteria": [
+        "Extracts implicit core concepts (e.g., 'decoherence', 'quantum systems', 'phase transitions') even when expressed through dense technical terminology",
+        "Identifies underlying physical phenomena and mechanisms (e.g., 'environmental entanglement', 'dissipation', 'quantum information') rather than only surface-level keywords",
+        "Returns results as a valid JSON array of strings with no extraneous fields"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a dense abstract containing heavily nested or implicit topics expressed through technical jargon, ensuring the prompt extracts underlying concepts even when topics aren't explicitly stated"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it provides a valid JSON array of strings containing topics from the article, with no extraneous commentary or fields. The response is JSON-only as required. Regarding secondary criteria, the solution demonstrates strong performance in extracting both explicit keywords and implicit core concepts. It identifies underlying physical phenomena (environmental entanglement, phase coherence degradation, topological protection) rather than surface-level terms. The extraction captures the theoretical frameworks (Green's function formalism, stochastic master equation) and conceptual transitions (quantum to classical) effectively. The only minor deficiency is the omission of 'dissipative processes,' which is explicitly mentioned as a key mechanism in the text. This is a small gap in an otherwise comprehensive extraction."
+  }
+]
