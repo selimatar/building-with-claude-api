@@ -1,0 +1,472 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">7.7 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">66.7%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a strength/power athlete (weightlifter) focusing on protein distribution across meals and strategic nutrient timing for muscle recovery</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 85 kg<br><strong>goal:</strong> Maximize muscle recovery and strength gains from weightlifting training<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Meal plan covers all meals for one full day in compact format<br>• Protein is distributed across at least 4 meals with 25-40g per meal<br>• Includes nutrient timing strategy around workout (pre/post-workout meals specified)<br>• Total daily calories and macronutrients align with strength athlete needs</td>
+                <td class="output"><pre># One-Day Muscle Recovery & Strength Meal Plan
+**Athlete: 178 cm, 85 kg | Goal: Muscle Recovery & Strength Gains**
+
+---
+
+## Daily Nutritional Targets
+- **Calories:** 3,200 kcal
+- **Protein:** 170g (2.0g per kg bodyweight)
+- **Carbohydrates:** 400g (4.7g per kg bodyweight)
+- **Fat:** 85g (1.0g per kg bodyweight)
+
+---
+
+## Meal Plan
+
+### **BREAKFAST** (7:00 AM) | ~850 kcal
+*Post-overnight fast, pre-training energy*
+
+- Oatmeal (dry): 80g → ~280 kcal
+- Whole eggs: 3 large → ~210 kcal
+- Banana: 150g → ~130 kcal
+- Honey: 20g → ~60 kcal
+- Whole milk: 200ml → ~130 kcal
+
+**Macros:** 28g protein | 115g carbs | 22g fat
+
+---
+
+### **PRE-WORKOUT SNACK** (10:30 AM) | ~300 kcal
+*1-2 hours before training*
+
+- White rice cakes: 50g → ~175 kcal
+- Almond butter: 25g → ~150 kcal
+- Banana: 100g → ~89 kcal
+
+**Macros:** 8g protein | 42g carbs | 10g fat
+
+---
+
+### **LUNCH** (1:00 PM) | ~950 kcal
+*Primary protein & carb source*
+
+- Chicken breast (grilled): 200g → ~330 kcal
+- White rice (cooked): 200g → ~260 kcal
+- Broccoli: 150g → ~50 kcal
+- Olive oil: 15ml → ~135 kcal
+- Orange juice: 250ml → ~110 kcal
+
+**Macros:** 48g protein | 75g carbs | 20g fat
+
+---
+
+### **POST-WORKOUT SHAKE** (4:30 PM) | ~400 kcal
+*Immediate recovery window (if training 3-4 PM)*
+
+- Whey protein powder: 40g → ~160 kcal
+- Dextrose powder: 40g → ~160 kcal
+- Whole milk: 250ml → ~165 kcal
+- Water: 100ml
+
+**Macros:** 28g protein | 50g carbs | 4g fat
+
+---
+
+### **DINNER** (7:00 PM) | ~700 kcal
+*Lean protein, sustained carbs*
+
+- Ground beef (93% lean): 180g → ~280 kcal
+- Sweet potato (baked): 250g → ~230 kcal
+- Mixed vegetables (spinach/carrots): 100g → ~35 kcal
+- Olive oil: 10ml → ~90 kcal
+- Brown rice (cooked): 50g → ~65 kcal
+
+**Macros:** 40g protein | 70g carbs | 16g fat
+
+---
+
+### **BEDTIME SNACK** (10:00 PM) | ~200 kcal
+*Slow-digesting protein for overnight recovery*
+
+- Greek yogurt (0%): 200g → ~130 kcal
+- Granola (low sugar): 30g → ~120 kcal
+- Almonds: 15g → ~85 kcal
+
+**Macros:** 18g protein | 48g carbs | 13g fat
+
+---
+
+## Daily Summary
+| Macro | Target | Actual |
+|-------|--------|--------|
+| **Calories** | 3,200 | 3,200 |
+| **Protein** | 170g | 170g |
+| **Carbs** | 400g | 400g |
+| **Fat** | 85g | 85g |
+
+---
+
+## Notes for Success
+✓ **Timing:** Carbs concentrated around workouts</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution comprehensively meets all mandatory requirements with precise daily caloric totals, detailed macronutrient breakdowns, and specific meals with exact portions and timing. It exceeds secondary criteria by providing 6 meals with well-distributed protein (8-48g per meal), clear pre/post-workout nutrient timing, and a coherent recovery strategy. The macronutrient ratios (2.0g protein/kg, 4.7g carbs/kg, 1.0g fat/kg) are appropriate for a strength athlete focused on muscle recovery. The meal plan is compact, practical, and actionable. Minor weaknesses are negligible and do not impact the core quality of the solution.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a high-endurance athlete (marathon runner) requiring maximum caloric intake and carbohydrate loading with specific timing around training sessions</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Marathon training with carbohydrate loading and pre/post-workout nutrition optimization<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Meal plan covers all 3 meals plus pre- and post-workout snacks aligned with marathon training<br>• Total daily calories meet high-endurance athlete requirements (approximately 3,500-4,000 kcal)<br>• Carbohydrates comprise 60-65% of total daily intake with strategic timing around training<br>• Plan is presented in compact, single-day format with clear meal timing</td>
+                <td class="output"><pre># One-Day Marathon Training Meal Plan
+**Athlete: 180 cm, 72 kg | Goal: Marathon Training with Carbohydrate Loading**
+
+---
+
+## Daily Nutritional Targets
+- **Calories:** 3,100 kcal
+- **Protein:** 115g (1.6g per kg bodyweight)
+- **Carbohydrates:** 520g (7.2g per kg bodyweight) *Carb-loading for endurance*
+- **Fat:** 75g (1.0g per kg bodyweight)
+
+---
+
+## Meal Plan
+
+### **BREAKFAST** (7:00 AM) | ~800 kcal
+*Pre-run fuel with quick & sustained carbs*
+
+- Bagel (white): 100g → ~280 kcal
+- Peanut butter: 30g → ~180 kcal
+- Banana: 150g → ~130 kcal
+- Honey: 15g → ~45 kcal
+- Whole milk: 200ml → ~130 kcal
+
+**Macros:** 24g protein | 110g carbs | 20g fat
+
+---
+
+### **PRE-WORKOUT SNACK** (9:30 AM) | ~250 kcal
+*30-45 minutes before long run*
+
+- Sports drink (6% carbs): 500ml → ~120 kcal
+- Energy bar (oat-based): 65g → ~250 kcal
+- Water: 250ml
+
+**Macros:** 4g protein | 60g carbs | 3g fat
+
+---
+
+### **LUNCH** (1:00 PM) | ~900 kcal
+*Post-run recovery + carb replenishment*
+
+- Pasta (cooked): 250g → ~340 kcal
+- Lean ground turkey: 150g → ~250 kcal
+- Marinara sauce: 100g → ~40 kcal
+- Parmesan cheese: 20g → ~80 kcal
+- Olive oil: 10ml → ~90 kcal
+
+**Macros:** 35g protein | 120g carbs | 18g fat
+
+---
+
+### **MID-AFTERNOON SNACK** (4:00 PM) | ~300 kcal
+*Sustained energy, light on stomach*
+
+- Rice cakes: 50g → ~175 kcal
+- Honey: 20g → ~60 kcal
+- Banana: 120g → ~105 kcal
+- Water: 200ml
+
+**Macros:** 3g protein | 75g carbs | 1g fat
+
+---
+
+### **DINNER** (7:00 PM) | ~650 kcal
+*Moderate protein, high carbs for overnight recovery*
+
+- Salmon (baked): 160g → ~290 kcal
+- White rice (cooked): 220g → ~290 kcal
+- Asparagus: 100g → ~25 kcal
+- Olive oil: 8ml → ~70 kcal
+
+**Macros:** 32g protein | 105g carbs | 18g fat
+
+---
+
+### **EVENING SNACK** (9:30 PM) | ~200 kcal
+*Carbs for glycogen restoration*
+
+- White toast: 50g → ~130 kcal
+- Jam: 25g → ~65 kcal
+- Water: 200ml
+
+**Macros:** 3g protein | 50g carbs | 1g fat
+
+---
+
+## Daily Summary
+| Macro | Target | Actual |
+|-------|--------|--------|
+| **Calories** | 3,100 | 3,100 |
+| **Protein** | 115g | 101g |
+| **Carbs** | 520g | 520g |
+| **Fat** | 75g | 61g |
+
+---
+
+## Notes for Success
+✓ **Carb Loading Strategy:** 72% of calories from carbohydrates for glycogen maximization
+✓ **Timing:** High glycemic carbs immediately post-run (lunch window)
+✓ **Hyd</pre></td>
+                <td class="score-col"><span class="score score-low">5</span></td>
+                <td class="reasoning">The solution meets all three mandatory requirements with excellent clarity and organization. However, it fails a critical secondary criterion: the total daily calories (3,100 kcal) are substantially below the 3,500-4,000 kcal requirement for high-endurance marathon training athletes. A 72kg athlete in marathon training typically requires 48-55 kcal/kg, which would be 3,456-3,960 kcal—making this plan inadequate for the stated goal. The macronutrient percentages are slightly off target, and protein is underdosed. While the meal structure and timing are exemplary, the insufficient caloric content is a significant deficiency that undermines the plan's effectiveness for marathon training.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a sport-specific athlete (professional soccer player) balancing hydration, quick energy sources, and recovery nutrition for a match day schedule</td>
+                <td class="prompt-inputs"><strong>height:</strong> 183 cm<br><strong>weight:</strong> 78 kg<br><strong>goal:</strong> Match day nutrition for optimal performance and recovery in professional soccer<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Includes 4-5 meals/snacks timed around match schedule with hydration strategy<br>• Balances quick carbohydrates for energy, protein for recovery, and electrolytes for hydration<br>• Meal plan is compact and fits within a single day format</td>
+                <td class="output"><pre># One-Day Match Day Nutrition Meal Plan
+**Athlete: 183 cm, 78 kg | Goal: Match Day Performance & Recovery in Professional Soccer**
+
+---
+
+## Daily Nutritional Targets
+- **Calories:** 3,100 kcal
+- **Protein:** 117g (1.5g per kg bodyweight)
+- **Carbohydrates:** 465g (5.9g per kg bodyweight)
+- **Fat:** 78g (1.0g per kg bodyweight)
+
+---
+
+## Meal Plan
+
+### **BREAKFAST** (7:00 AM) | ~750 kcal
+*Early morning fuel, 4-5 hours pre-match*
+
+- Pancakes (whole wheat): 120g → ~310 kcal
+- Maple syrup: 30g → ~90 kcal
+- Eggs (scrambled): 2 large → ~155 kcal
+- Orange juice: 250ml → ~110 kcal
+- Banana: 100g → ~89 kcal
+
+**Macros:** 18g protein | 95g carbs | 18g fat
+
+---
+
+### **PRE-MATCH SNACK** (10:00 AM) | ~280 kcal
+*2 hours before kick-off, easily digestible*
+
+- White bread: 60g → ~150 kcal
+- Honey: 25g → ~75 kcal
+- Low-fat cheese: 30g → ~85 kcal
+- Water: 500ml
+
+**Macros:** 8g protein | 48g carbs | 5g fat
+
+---
+
+### **LIGHT SNACK** (12:30 PM) | ~220 kcal
+*30-45 minutes pre-match (if needed based on kick-off time)*
+
+- Rice cakes: 40g → ~140 kcal
+- Banana: 80g → ~71 kcal
+- Water: 400ml
+
+**Macros:** 2g protein | 52g carbs | 1g fat
+
+---
+
+### **POST-MATCH RECOVERY SHAKE** (15 mins post-match) | ~400 kcal
+*Immediate glycogen & protein replenishment window*
+
+- Whey protein powder: 35g → ~140 kcal
+- Maltodextrin powder: 45g → ~180 kcal
+- Banana: 120g → ~107 kcal
+- Water: 250ml
+
+**Macros:** 28g protein | 65g carbs | 2g fat
+
+---
+
+### **RECOVERY MEAL** (1.5-2 hours post-match) | ~800 kcal
+*Primary carb & protein restoration*
+
+- Chicken breast (grilled): 200g → ~330 kcal
+- White rice (cooked): 250g → ~325 kcal
+- Carrots (steamed): 100g → ~41 kcal
+- Olive oil: 10ml → ~90 kcal
+- Tomato: 80g → ~14 kcal
+
+**Macros:** 48g protein | 115g carbs | 14g fat
+
+---
+
+### **DINNER** (7:00 PM) | ~550 kcal
+*Continued recovery, lighter than lunch*
+
+- Turkey breast (roasted): 160g → ~235 kcal
+- Sweet potato (baked): 200g → ~184 kcal
+- Spinach (sautéed): 80g → ~22 kcal
+- Olive oil: 8ml → ~72 kcal
+- Lemon juice: 10ml
+
+**Macros:** 38g protein | 65g carbs | 14g fat
+
+---
+
+### **EVENING SNACK** (9:30 PM) | ~100 kcal
+*Light, sleep-friendly option*
+
+- Low-fat Greek yogurt: 150g → ~85 kcal
+- Berries (blueberries): 50g → ~27 kcal
+
+**Macros:** 12g protein | 8g carbs | 1g fat
+
+---
+
+## Daily Summary
+| Macro</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all three mandatory requirements: it provides a daily caloric total (3,100 kcal), complete macronutrient breakdown (protein/carbs/fat with grams), and meals with exact foods, portions, and specific timing. The meal plan includes 7 eating occasions appropriately distributed around a match day with clear pre-match, match, and post-match nutrition strategy. It meets the secondary criteria of balancing quick carbohydrates, protein for recovery, and includes 4-5+ meals/snacks with timing. The primary weakness is an underdeveloped hydration strategy (only water mentioned without specific targets or electrolyte guidance) and a truncated final summary table. These issues are notable but do not violate mandatory requirements.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

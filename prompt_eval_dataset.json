@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS CloudFormation template and extract all resource logical IDs that are of type 'AWS::S3::Bucket'",
+    "format": "python",
+    "solution_criteria": "The solution should return a list of logical IDs for S3 bucket resources. It should handle valid CloudFormation JSON/YAML templates and correctly filter by resource type."
+  },
+  {
+    "task": "Validate an AWS IAM policy document and extract all actions (Action field) that grant permissions to S3 services",
+    "format": "python",
+    "solution_criteria": "The solution should parse a JSON IAM policy, handle both single action strings and action arrays, and return only actions matching 's3:*' pattern or specific S3 operations."
+  },
+  {
+    "task": "Create a JSON configuration object for an AWS Lambda environment that sets variables for database connection (host, port, database name, and timeout in seconds)",
+    "format": "json",
+    "solution_criteria": "The JSON should define an environment variables object with keys for DB_HOST, DB_PORT, DB_NAME, and TIMEOUT_SECONDS with realistic AWS-compatible example values."
+  }
+]

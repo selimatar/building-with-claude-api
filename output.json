@@ -1,0 +1,64 @@
+[
+  {
+    "output": "# One-Day Muscle Recovery & Strength Meal Plan\n**Athlete: 178 cm, 85 kg | Goal: Muscle Recovery & Strength Gains**\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,200 kcal\n- **Protein:** 170g (2.0g per kg bodyweight)\n- **Carbohydrates:** 400g (4.7g per kg bodyweight)\n- **Fat:** 85g (1.0g per kg bodyweight)\n\n---\n\n## Meal Plan\n\n### **BREAKFAST** (7:00 AM) | ~850 kcal\n*Post-overnight fast, pre-training energy*\n\n- Oatmeal (dry): 80g \u2192 ~280 kcal\n- Whole eggs: 3 large \u2192 ~210 kcal\n- Banana: 150g \u2192 ~130 kcal\n- Honey: 20g \u2192 ~60 kcal\n- Whole milk: 200ml \u2192 ~130 kcal\n\n**Macros:** 28g protein | 115g carbs | 22g fat\n\n---\n\n### **PRE-WORKOUT SNACK** (10:30 AM) | ~300 kcal\n*1-2 hours before training*\n\n- White rice cakes: 50g \u2192 ~175 kcal\n- Almond butter: 25g \u2192 ~150 kcal\n- Banana: 100g \u2192 ~89 kcal\n\n**Macros:** 8g protein | 42g carbs | 10g fat\n\n---\n\n### **LUNCH** (1:00 PM) | ~950 kcal\n*Primary protein & carb source*\n\n- Chicken breast (grilled): 200g \u2192 ~330 kcal\n- White rice (cooked): 200g \u2192 ~260 kcal\n- Broccoli: 150g \u2192 ~50 kcal\n- Olive oil: 15ml \u2192 ~135 kcal\n- Orange juice: 250ml \u2192 ~110 kcal\n\n**Macros:** 48g protein | 75g carbs | 20g fat\n\n---\n\n### **POST-WORKOUT SHAKE** (4:30 PM) | ~400 kcal\n*Immediate recovery window (if training 3-4 PM)*\n\n- Whey protein powder: 40g \u2192 ~160 kcal\n- Dextrose powder: 40g \u2192 ~160 kcal\n- Whole milk: 250ml \u2192 ~165 kcal\n- Water: 100ml\n\n**Macros:** 28g protein | 50g carbs | 4g fat\n\n---\n\n### **DINNER** (7:00 PM) | ~700 kcal\n*Lean protein, sustained carbs*\n\n- Ground beef (93% lean): 180g \u2192 ~280 kcal\n- Sweet potato (baked): 250g \u2192 ~230 kcal\n- Mixed vegetables (spinach/carrots): 100g \u2192 ~35 kcal\n- Olive oil: 10ml \u2192 ~90 kcal\n- Brown rice (cooked): 50g \u2192 ~65 kcal\n\n**Macros:** 40g protein | 70g carbs | 16g fat\n\n---\n\n### **BEDTIME SNACK** (10:00 PM) | ~200 kcal\n*Slow-digesting protein for overnight recovery*\n\n- Greek yogurt (0%): 200g \u2192 ~130 kcal\n- Granola (low sugar): 30g \u2192 ~120 kcal\n- Almonds: 15g \u2192 ~85 kcal\n\n**Macros:** 18g protein | 48g carbs | 13g fat\n\n---\n\n## Daily Summary\n| Macro | Target | Actual |\n|-------|--------|--------|\n| **Calories** | 3,200 | 3,200 |\n| **Protein** | 170g | 170g |\n| **Carbs** | 400g | 400g |\n| **Fat** | 85g | 85g |\n\n---\n\n## Notes for Success\n\u2713 **Timing:** Carbs concentrated around workouts",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "85 kg",
+        "goal": "Maximize muscle recovery and strength gains from weightlifting training",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan covers all meals for one full day in compact format",
+        "Protein is distributed across at least 4 meals with 25-40g per meal",
+        "Includes nutrient timing strategy around workout (pre/post-workout meals specified)",
+        "Total daily calories and macronutrients align with strength athlete needs"
+      ],
+      "task_description": "Write a compact, concise, 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) focusing on protein distribution across meals and strategic nutrient timing for muscle recovery"
+    },
+    "score": 10,
+    "reasoning": "The solution comprehensively meets all mandatory requirements with precise daily caloric totals, detailed macronutrient breakdowns, and specific meals with exact portions and timing. It exceeds secondary criteria by providing 6 meals with well-distributed protein (8-48g per meal), clear pre/post-workout nutrient timing, and a coherent recovery strategy. The macronutrient ratios (2.0g protein/kg, 4.7g carbs/kg, 1.0g fat/kg) are appropriate for a strength athlete focused on muscle recovery. The meal plan is compact, practical, and actionable. Minor weaknesses are negligible and do not impact the core quality of the solution."
+  },
+  {
+    "output": "# One-Day Marathon Training Meal Plan\n**Athlete: 180 cm, 72 kg | Goal: Marathon Training with Carbohydrate Loading**\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,100 kcal\n- **Protein:** 115g (1.6g per kg bodyweight)\n- **Carbohydrates:** 520g (7.2g per kg bodyweight) *Carb-loading for endurance*\n- **Fat:** 75g (1.0g per kg bodyweight)\n\n---\n\n## Meal Plan\n\n### **BREAKFAST** (7:00 AM) | ~800 kcal\n*Pre-run fuel with quick & sustained carbs*\n\n- Bagel (white): 100g \u2192 ~280 kcal\n- Peanut butter: 30g \u2192 ~180 kcal\n- Banana: 150g \u2192 ~130 kcal\n- Honey: 15g \u2192 ~45 kcal\n- Whole milk: 200ml \u2192 ~130 kcal\n\n**Macros:** 24g protein | 110g carbs | 20g fat\n\n---\n\n### **PRE-WORKOUT SNACK** (9:30 AM) | ~250 kcal\n*30-45 minutes before long run*\n\n- Sports drink (6% carbs): 500ml \u2192 ~120 kcal\n- Energy bar (oat-based): 65g \u2192 ~250 kcal\n- Water: 250ml\n\n**Macros:** 4g protein | 60g carbs | 3g fat\n\n---\n\n### **LUNCH** (1:00 PM) | ~900 kcal\n*Post-run recovery + carb replenishment*\n\n- Pasta (cooked): 250g \u2192 ~340 kcal\n- Lean ground turkey: 150g \u2192 ~250 kcal\n- Marinara sauce: 100g \u2192 ~40 kcal\n- Parmesan cheese: 20g \u2192 ~80 kcal\n- Olive oil: 10ml \u2192 ~90 kcal\n\n**Macros:** 35g protein | 120g carbs | 18g fat\n\n---\n\n### **MID-AFTERNOON SNACK** (4:00 PM) | ~300 kcal\n*Sustained energy, light on stomach*\n\n- Rice cakes: 50g \u2192 ~175 kcal\n- Honey: 20g \u2192 ~60 kcal\n- Banana: 120g \u2192 ~105 kcal\n- Water: 200ml\n\n**Macros:** 3g protein | 75g carbs | 1g fat\n\n---\n\n### **DINNER** (7:00 PM) | ~650 kcal\n*Moderate protein, high carbs for overnight recovery*\n\n- Salmon (baked): 160g \u2192 ~290 kcal\n- White rice (cooked): 220g \u2192 ~290 kcal\n- Asparagus: 100g \u2192 ~25 kcal\n- Olive oil: 8ml \u2192 ~70 kcal\n\n**Macros:** 32g protein | 105g carbs | 18g fat\n\n---\n\n### **EVENING SNACK** (9:30 PM) | ~200 kcal\n*Carbs for glycogen restoration*\n\n- White toast: 50g \u2192 ~130 kcal\n- Jam: 25g \u2192 ~65 kcal\n- Water: 200ml\n\n**Macros:** 3g protein | 50g carbs | 1g fat\n\n---\n\n## Daily Summary\n| Macro | Target | Actual |\n|-------|--------|--------|\n| **Calories** | 3,100 | 3,100 |\n| **Protein** | 115g | 101g |\n| **Carbs** | 520g | 520g |\n| **Fat** | 75g | 61g |\n\n---\n\n## Notes for Success\n\u2713 **Carb Loading Strategy:** 72% of calories from carbohydrates for glycogen maximization\n\u2713 **Timing:** High glycemic carbs immediately post-run (lunch window)\n\u2713 **Hyd",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "72 kg",
+        "goal": "Marathon training with carbohydrate loading and pre/post-workout nutrition optimization",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan covers all 3 meals plus pre- and post-workout snacks aligned with marathon training",
+        "Total daily calories meet high-endurance athlete requirements (approximately 3,500-4,000 kcal)",
+        "Carbohydrates comprise 60-65% of total daily intake with strategic timing around training",
+        "Plan is presented in compact, single-day format with clear meal timing"
+      ],
+      "task_description": "Write a compact, concise, 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum caloric intake and carbohydrate loading with specific timing around training sessions"
+    },
+    "score": 5,
+    "reasoning": "The solution meets all three mandatory requirements with excellent clarity and organization. However, it fails a critical secondary criterion: the total daily calories (3,100 kcal) are substantially below the 3,500-4,000 kcal requirement for high-endurance marathon training athletes. A 72kg athlete in marathon training typically requires 48-55 kcal/kg, which would be 3,456-3,960 kcal\u2014making this plan inadequate for the stated goal. The macronutrient percentages are slightly off target, and protein is underdosed. While the meal structure and timing are exemplary, the insufficient caloric content is a significant deficiency that undermines the plan's effectiveness for marathon training."
+  },
+  {
+    "output": "# One-Day Match Day Nutrition Meal Plan\n**Athlete: 183 cm, 78 kg | Goal: Match Day Performance & Recovery in Professional Soccer**\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,100 kcal\n- **Protein:** 117g (1.5g per kg bodyweight)\n- **Carbohydrates:** 465g (5.9g per kg bodyweight)\n- **Fat:** 78g (1.0g per kg bodyweight)\n\n---\n\n## Meal Plan\n\n### **BREAKFAST** (7:00 AM) | ~750 kcal\n*Early morning fuel, 4-5 hours pre-match*\n\n- Pancakes (whole wheat): 120g \u2192 ~310 kcal\n- Maple syrup: 30g \u2192 ~90 kcal\n- Eggs (scrambled): 2 large \u2192 ~155 kcal\n- Orange juice: 250ml \u2192 ~110 kcal\n- Banana: 100g \u2192 ~89 kcal\n\n**Macros:** 18g protein | 95g carbs | 18g fat\n\n---\n\n### **PRE-MATCH SNACK** (10:00 AM) | ~280 kcal\n*2 hours before kick-off, easily digestible*\n\n- White bread: 60g \u2192 ~150 kcal\n- Honey: 25g \u2192 ~75 kcal\n- Low-fat cheese: 30g \u2192 ~85 kcal\n- Water: 500ml\n\n**Macros:** 8g protein | 48g carbs | 5g fat\n\n---\n\n### **LIGHT SNACK** (12:30 PM) | ~220 kcal\n*30-45 minutes pre-match (if needed based on kick-off time)*\n\n- Rice cakes: 40g \u2192 ~140 kcal\n- Banana: 80g \u2192 ~71 kcal\n- Water: 400ml\n\n**Macros:** 2g protein | 52g carbs | 1g fat\n\n---\n\n### **POST-MATCH RECOVERY SHAKE** (15 mins post-match) | ~400 kcal\n*Immediate glycogen & protein replenishment window*\n\n- Whey protein powder: 35g \u2192 ~140 kcal\n- Maltodextrin powder: 45g \u2192 ~180 kcal\n- Banana: 120g \u2192 ~107 kcal\n- Water: 250ml\n\n**Macros:** 28g protein | 65g carbs | 2g fat\n\n---\n\n### **RECOVERY MEAL** (1.5-2 hours post-match) | ~800 kcal\n*Primary carb & protein restoration*\n\n- Chicken breast (grilled): 200g \u2192 ~330 kcal\n- White rice (cooked): 250g \u2192 ~325 kcal\n- Carrots (steamed): 100g \u2192 ~41 kcal\n- Olive oil: 10ml \u2192 ~90 kcal\n- Tomato: 80g \u2192 ~14 kcal\n\n**Macros:** 48g protein | 115g carbs | 14g fat\n\n---\n\n### **DINNER** (7:00 PM) | ~550 kcal\n*Continued recovery, lighter than lunch*\n\n- Turkey breast (roasted): 160g \u2192 ~235 kcal\n- Sweet potato (baked): 200g \u2192 ~184 kcal\n- Spinach (saut\u00e9ed): 80g \u2192 ~22 kcal\n- Olive oil: 8ml \u2192 ~72 kcal\n- Lemon juice: 10ml\n\n**Macros:** 38g protein | 65g carbs | 14g fat\n\n---\n\n### **EVENING SNACK** (9:30 PM) | ~100 kcal\n*Light, sleep-friendly option*\n\n- Low-fat Greek yogurt: 150g \u2192 ~85 kcal\n- Berries (blueberries): 50g \u2192 ~27 kcal\n\n**Macros:** 12g protein | 8g carbs | 1g fat\n\n---\n\n## Daily Summary\n| Macro",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "183 cm",
+        "weight": "78 kg",
+        "goal": "Match day nutrition for optimal performance and recovery in professional soccer",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Includes 4-5 meals/snacks timed around match schedule with hydration strategy",
+        "Balances quick carbohydrates for energy, protein for recovery, and electrolytes for hydration",
+        "Meal plan is compact and fits within a single day format"
+      ],
+      "task_description": "Write a compact, concise, 1 day meal plan for a single athlete",
+      "scenario": "Testing with a sport-specific athlete (professional soccer player) balancing hydration, quick energy sources, and recovery nutrition for a match day schedule"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all three mandatory requirements: it provides a daily caloric total (3,100 kcal), complete macronutrient breakdown (protein/carbs/fat with grams), and meals with exact foods, portions, and specific timing. The meal plan includes 7 eating occasions appropriately distributed around a match day with clear pre-match, match, and post-match nutrition strategy. It meets the secondary criteria of balancing quick carbohydrates, protein for recovery, and includes 4-5+ meals/snacks with timing. The primary weakness is an underdeveloped hydration strategy (only water mentioned without specific targets or electrolyte guidance) and a truncated final summary table. These issues are notable but do not violate mandatory requirements."
+  }
+]

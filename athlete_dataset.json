@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "183 cm",
+      "weight": "78 kg",
+      "goal": "Match day nutrition for optimal performance and recovery in professional soccer",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Includes 4-5 meals/snacks timed around match schedule with hydration strategy",
+      "Balances quick carbohydrates for energy, protein for recovery, and electrolytes for hydration",
+      "Meal plan is compact and fits within a single day format"
+    ],
+    "task_description": "Write a compact, concise, 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific athlete (professional soccer player) balancing hydration, quick energy sources, and recovery nutrition for a match day schedule"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "85 kg",
+      "goal": "Maximize muscle recovery and strength gains from weightlifting training",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one full day in compact format",
+      "Protein is distributed across at least 4 meals with 25-40g per meal",
+      "Includes nutrient timing strategy around workout (pre/post-workout meals specified)",
+      "Total daily calories and macronutrients align with strength athlete needs"
+    ],
+    "task_description": "Write a compact, concise, 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) focusing on protein distribution across meals and strategic nutrient timing for muscle recovery"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon training with carbohydrate loading and pre/post-workout nutrition optimization",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all 3 meals plus pre- and post-workout snacks aligned with marathon training",
+      "Total daily calories meet high-endurance athlete requirements (approximately 3,500-4,000 kcal)",
+      "Carbohydrates comprise 60-65% of total daily intake with strategic timing around training",
+      "Plan is presented in compact, single-day format with clear meal timing"
+    ],
+    "task_description": "Write a compact, concise, 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum caloric intake and carbohydrate loading with specific timing around training sessions"
+  }
+]
